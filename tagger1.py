@@ -1,5 +1,5 @@
-STUDENT={'name': 'STEVE GUTFREUND_YOEL JASNER',
-         'ID': '342873791_204380992'}
+STUDENT={'name': 'ROI FOGLER_ORI FOGLER',
+         'ID': '302882527_318732484'}
          
 import dynet as dy
 import utils as ut
