@@ -72,9 +72,13 @@ def get_data(filename, task, update_vocab=True, pre_trained=False, sub_words=Fal
         LABELS = list(set(LABELS))              # removing all duplicates
     
     print("Done.")
-    # return zip(inputs, labels)
-    t_l = list(zip(inputs, labels))
-    return list(t_l)
+
+    # for py2
+    return zip(inputs, labels)
+
+    # for py3
+    # t_l = list(zip(inputs, labels))
+    # return list(t_l)
 
 def get_test_data(filename, task, pre_trained=False):
     print("Loading {0} data...".format(task))
